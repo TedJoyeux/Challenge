@@ -1,3 +1,6 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
 body{
     background: #f1f1f1;
     font-family: Roboto, sans-serif;
@@ -35,15 +38,46 @@ display: inline-block;
 .menu a.active{
 color: #fff;
 }
+.content{
+    padding: 0 15px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.sidebar{
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.sidebar a{
+    display: block;
+    text-decoration: none;
+    padding: 12px 0;
+    transition: color .4s;
+}
+.sidebar a span{
+    margin-right: 8px;
+}
+.sidebar a:hover{
+    text-decoration: underline;
+}
+.sidebar a:hover,
+.sidebar a.active{
+    color: #000;
+}
 
-@media only screen and (min-width: 100px){
+@media only screen and (min-width: 490px){
     .topbar{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 64px;
+        padding: 0 25px;
     }
     .topbar-logo,
     .menu{
         padding: 0;
+    }
+    .menu a{
+        margin: 0 20px;
     }
 }
