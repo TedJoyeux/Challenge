@@ -42,4 +42,8 @@ color: #fff;
         justify-content: space-between;
         align-items: center;
     }
+    .topbar-logo,
+    .menu{
+        padding: 0;
+    }
 }
